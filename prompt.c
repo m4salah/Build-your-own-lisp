@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <editline/readline.h>
-#include <histedit.h>
+
 /** #include <editline/history.h> */
 
 int
@@ -12,7 +12,7 @@ main(){
 
     // infinte loooooooooooooooop
 
-    while(1){
+    while(!0){
         
         // out prompt and get history
         char* input = readline("lispy> ");
@@ -21,8 +21,7 @@ main(){
         add_history(input);
 
         // echo the call
-        printf("No you're a %s \n", input);
-        puts("");
+        printf("No you're a %s\n", input);
 
         free(input);
     }
