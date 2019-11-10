@@ -8,6 +8,7 @@ int
 main(){
     /* Pring usfull staff */
     puts("Lisp version 0.0.0.0.1");
+    puts("Tht\'s will be fun :)");
     puts("Press ctr-c to Exit\n");
 
     // infinte loooooooooooooooop
@@ -15,13 +16,13 @@ main(){
     while(!0){
         
         // out prompt and get history
-        char* input = readline("lispy> ");
+        char* input = readline("myLispy> ");
         
         // add input to the history
         add_history(input);
 
         // echo the call
-        printf("No you're a %s\n", input);
+        printf("No you're a %s as me\n", input) ; // \n mean insert newlinie
 
         free(input);
     }
